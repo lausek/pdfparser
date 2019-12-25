@@ -271,6 +271,7 @@ class PDFObject
             $commands = $this->getCommandsText($section);
 
             foreach ($commands as $command) {
+                echo $command[self::TYPE] . " " . $command[self::COMMAND];
 
                 switch ($command[self::OPERATOR]) {
                     // set character spacing
